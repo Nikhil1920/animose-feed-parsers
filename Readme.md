@@ -4,6 +4,10 @@
 
 This is a collection of parsers for various feeds you can configure in Animose. It is a work in progress, and I will add more as I go along.
 
+## What do the parsers do?
+
+parsers are functions that take the html of a feed and return an array of stream objects which will be used by animose to display the streams in the app.
+
 ## How do I use it?
 
 You can use this by going to settings and then configure feeds in your animose app. add the feed url with search params and paste the corresponding parser function in the parser field.
@@ -36,3 +40,7 @@ function torrentzParser(html) {
     return extractedData;
 }
 ```
+
+## Where can I find animose app?
+
+Animose app is available on [play store](https://play.google.com/store/apps/details?id=com.byanr.mose) and as a [web app](https://animose.byanr.com)
